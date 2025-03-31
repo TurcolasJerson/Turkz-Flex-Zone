@@ -1,0 +1,270 @@
+body {
+    font-family: Arial;
+    background: url('../images/bg-3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.website-name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f4b400;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 40px;
+}
+
+.logo img {
+    height: 25px;
+    border-radius: 30%;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+.detail-header {
+    text-align: center;
+    top: 8%;
+    left: 20px;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    flex: 1;
+    padding: 20px;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+        
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+        
+.footer ul li {
+    margin: 5px 0;
+}
+        
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+        
+.footer ul li a:hover {
+    color: #ffcc00;
+}
+
+.detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 70%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.text-left {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    color: white;
+}
+
+.video-banner {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.video-banner iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.image-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.image-right img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.workout-details {
+    border: 3px solid white;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    text-align: left;
+    color: white;
+    max-width: 800px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.workout-details h1, .workout-details h3, .workout-details h4 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.workout-details ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.workout-details li {
+    margin: 5px 0;
+}
+
+.workout-details p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .video-banner iframe {
+        height: 300px;
+    }
+
+    .image-right img {
+        max-width: 250px;
+    }
+
+    .workout-details {
+        padding: 15px;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 640px) {
+    .top-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        }
+        .website-name {
+        font-size: 22px;
+        }
+        nav {
+        flex-direction: column;
+        gap: 10px;
+        }
+
+    .detail-header {
+        font-size: 35px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .workout-details {
+        padding: 10px;
+    }
+
+    .video-banner iframe {
+        height: 250px;
+    }
+
+    .image-right img {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 340px) {
+    .top-section {
+        padding: 10px;
+    }
+
+    .website-name {
+        font-size: 22px;
+    }
+
+    .detail-header {
+        font-size: 36px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .video-banner iframe {
+        height: 200px;
+    }
+
+    .image-right img {
+        max-width: 100%;
+    }
+
+    .workout-details {
+        padding: 8px;
+        max-width: 95%;
+    }
+}

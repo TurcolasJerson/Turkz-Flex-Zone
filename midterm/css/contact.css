@@ -1,0 +1,229 @@
+body {
+font-family: Arial;
+background: url('../images/barbel.jpg') no-repeat center center fixed;
+background-size: cover;
+margin: 0;
+padding: 0;
+color: #EAE0D5;
+}
+
+.website-name {
+font-size: 28px;
+font-weight: bold;
+color: #f4b400;
+}
+
+.top-section {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.7);
+padding: 20px 40px;
+}
+
+.logo img {
+height: 25px;
+border-radius: 30%;
+}
+
+nav {
+display: flex;
+gap: 20px;
+}
+
+nav a {
+text-decoration: none;
+font-weight: bold;
+color: white;
+text-transform: uppercase;
+padding: 10px;
+transition: color 0.3s;
+}
+
+nav a:hover {
+color: #ffcc00;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 30px;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+.contact-box table {
+    width: 100%;
+}
+.contact-box td {
+    padding: 20px;
+}
+.contact-box input, .contact-box textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.checkbox-container input {
+    width: 18px;
+    height: 18px;
+    accent-color: #007bff;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+background-color: rgba(0, 0, 0, 0.7);
+padding: 20px;
+text-align: center;
+}
+
+.footer ul {
+list-style-type: none;
+padding: 0;
+}
+
+.footer ul li {
+margin: 5px 0;
+}
+
+.footer ul li a {
+color: white;
+text-decoration: none;
+transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+color: #ffcc00;
+}
+
+.mailing a {
+color: white;
+text-decoration: none;
+transition: color 0.3s;
+}
+
+.mailing a:hover {
+color: #ffcc00;
+}
+
+.contact-header {
+font-size: 30px;
+top: 3%;
+left: 10px;
+margin: 20px;
+text-align: center;
+}
+
+@media (max-width: 640px) {
+    .top-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    }
+    .website-name {
+    font-size: 22px;
+    }
+    nav {
+    flex-direction: column;
+    gap: 10px;
+    }
+    .contact-container {
+    max-width: 90%;
+    padding: 15px;
+    }
+    .contact-header {
+    font-size: 30px;
+    }
+    .footer {
+    padding: 10px;
+    }
+    nav a {
+    font-size: 14px;
+    padding: 8px;
+    }
+    .top-section {
+    padding: 10px;
+    }
+    iframe {
+    height: 250px;
+    }
+    .footer {
+        padding: 15px;
+    }
+
+    .footer ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+    }
+    
+    @media (max-width: 340px) {
+    .contact-header {
+    font-size: 28px;
+    }
+    .footer {
+    padding: 10px;
+    }
+    .contact-container {
+    max-width: 95%;
+    padding: 10px;
+    }
+    nav a {
+    font-size: 12px;
+    padding: 6px;
+    }
+    .top-section {
+    padding: 5px;
+    }
+    iframe {
+    height: 200px;
+    }
+    }
+    
+    @media (min-width: 1024px) {
+    .contact-container {
+    max-width: 700px;
+    }
+    .contact-header {
+    font-size: 50px;
+    }
+    .top-section {
+    padding: 20px 60px;
+    }
+    iframe {
+    height: 350px;
+    }
+    }
+    
+    
